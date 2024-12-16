@@ -5,7 +5,7 @@ const app = express()
 
 app.use(
   cors({
-    origin: ['online-exam-registrations.vercel.app'],
+    origin: process.evn.CORS_ORIGIN,
     methods: ["GET", "POST"],
     credentials: true,
   }),
